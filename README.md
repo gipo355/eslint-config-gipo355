@@ -12,6 +12,8 @@ install the package:
 
 `npm install -D eslint-config-gipo355`
 
+## to utilize the built-in tsconfig:
+
 make a root level `tsconfig.eslint.json` 
 ```json
 {
@@ -25,3 +27,5 @@ make a root level `tsconfig.json`
     "extends": "eslint-config-gipo355/tsconfig.json"
 }
 ```
+
+You may need to add `includes:[]` and `excludes:[]` to tsconfigs as the typescript parser requires the files to be included
