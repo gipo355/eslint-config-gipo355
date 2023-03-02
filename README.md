@@ -10,7 +10,9 @@ Only suited for projects that start from 0.
 
 Good for: `ts, js, jsx, tsx, .astro, .json`.
 
-install the package:
+--- 
+
+install:
 
 ### For pnpm only:
 
@@ -22,9 +24,11 @@ install:
 
 `pnpm add -D eslint-config-gipo355`
 
-for npm:
+### for npm:
 
 `npm install -D eslint-config-gipo355`
+
+---
 
 create root level `.eslintrc.js` 
 ```js 
