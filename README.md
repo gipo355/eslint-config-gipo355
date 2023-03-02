@@ -15,9 +15,14 @@ install the package:
 ### For pnpm only:
 
 create root level `.npmrc`
-`auto-install-peers=true`
-install
+
+add line `auto-install-peers=true`
+
+install:
+
 `pnpm add -D eslint-config-gipo355`
+
+for npm:
 
 `npm install -D eslint-config-gipo355`
 
