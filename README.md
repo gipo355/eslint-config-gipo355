@@ -12,6 +12,11 @@ Good for: `ts, js, jsx, tsx, .astro, .json`.
 
 install the package:
 
+### For pnpm only:
+
+create root level `.npmrc`
+`auto-install-peers=true`
+install
 `pnpm add -D eslint-config-gipo355`
 
 `npm install -D eslint-config-gipo355`
