@@ -3,56 +3,20 @@
     "compilerOptions": {
         "noEmit": true
     },
-
     "include": [
         "*.json",
+        "*.jsonc",
+        "*.json5",
         "*.ts",
-        "course_jonas_node/natours/natours/src/__tests__/toursAPI.spec.ts",
-        "**/*.spec.*",
+        "*.js",
+        "*.jsx",
+        "*.tsx",
+        "*.spec.*",
+        "*.test.*",
         "apps/",
         "templates/",
         "packages/",
         "scripts/",
-
-        ".eslintrc.js",
-        ".stylelintrc.js",
-        // "tsconfig.eslint.json",
-        "tailwind.config.js",
-        "postcss.config.js",
-        // "package.json",
-        // "tsconfig.json",
-        "cypress.config.ts",
-        "babel.config.js",
-        // "course_jonas_node/*/*/*.json",
-        // "course_jonas_node/*/*/*/*.json",
-
-        // "course_jonas_node/*/*.js",
-        // "course_jonas_node/*/*.ts",
-        // "course_jonas_node/*/*/*.js",
-        // "course_jonas_node/*/*/*.ts",
-        // "course_jonas_node/*/*/*/*.js",
-        // "course_jonas_node/*/*/*/*.ts",
-        "course_jonas_node/",
-
-        // "course_jonas_javascript_udemy/*/*/*.json",
-        // "course_jonas_javascript_udemy/*/*/*/*.json",
-        // "course_jonas_javascript_udemy/*/*/*.js",
-        // "course_jonas_javascript_udemy/*/*/*/*.js",
-        // "course_jonas_javascript_udemy/*/*/*.ts",
-        // "course_jonas_javascript_udemy/*/*/*/*.ts",
-        "course_jonas_javascript_udemy/",
-
-        // "**/**/**/**/*.json",
-        // "**/**/**/**/**/*.json",
-        // "**/**/.*.js",
-        // "**/**/**/.*.js",
-        "lint-staged.config.js",
-        "templates/*/*.js",
-        "templates/*/.eslintrc.js",
-        "templates/*/babel.config.js",
-        "templates/*/ecosystem.config.js"
-        // "**/**/**/__tests__",
-        // "**/**/__tests__",
-        // "**/**/**/**__tests__"
+        "src/"
     ]
 }
