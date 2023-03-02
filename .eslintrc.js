@@ -310,5 +310,6 @@ module.exports = {
 
         // side effects and mutations (immutable and pure plugins)
         'no-var': 2,
+        'no-void': 'warn',
     },
 };
