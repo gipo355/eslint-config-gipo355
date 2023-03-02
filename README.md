@@ -41,6 +41,16 @@ module.exports = {
 }
 ```
 
+## use prettier
+
+create root level `.prettierrc.js`
+```js
+// .prettierrc.js
+module.exports = {
+require('eslint-config-gipo355/.prettierrc.js')
+}
+```
+
 ## to utilize the built-in tsconfig:
 
 make a root level `tsconfig.eslint.json` 
