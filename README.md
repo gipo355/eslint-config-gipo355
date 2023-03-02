@@ -12,6 +12,17 @@ install the package:
 
 `npm install -D eslint-config-gipo355`
 
+create `.eslintrc.js` 
+```js 
+// .eslintrc.js
+module.exports = {
+    extends: [
+        "gipo355", // standard config
+        "gipo355", // additional config for node only projects
+    ]
+}
+```
+
 ## to utilize the built-in tsconfig:
 
 make a root level `tsconfig.eslint.json` 
