@@ -1,0 +1,8 @@
+node_modules
+dist
+public
+build
+coverage
+cypress
+
+filterByTerm.spec.ts
