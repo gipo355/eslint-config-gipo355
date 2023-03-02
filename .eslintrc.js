@@ -117,8 +117,8 @@ module.exports = {
             },
             parserOptions: {
                 ecmaVersion: 2021,
-                tsconfigRootDir: __dirname, // new addition
-                // tsconfigRootDir: '.', // new addition
+                // tsconfigRootDir: __dirname, // new addition
+                tsconfigRootDir: '.', // new addition
                 sourceType: 'module',
                 project: ['./tsconfig.eslint.json'],
                 ecmaFeatures: {
