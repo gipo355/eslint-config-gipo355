@@ -127,7 +127,7 @@ module.exports = {
                 // extraFileExtensions: ['.json', '.jsonc', '.json5'],
             },
         },
-        // {
+        // { // not needed extending above
         //     files: ['*.json', '*.json5', '*.jsonc'],
         //     // extends: ['plugin:jsonc/recommended-with-jsonc'],
         //     parser: 'jsonc-eslint-parser',
@@ -151,6 +151,10 @@ module.exports = {
             rules: {
                 // override/add rules settings here, such as:
                 // "astro/no-set-html-directive": "error"
+                'react/jsx-filename-extension': [
+                    1,
+                    { extensions: ['.js', '.jsx', '.tsx', '.astro'] },
+                ],
             },
         },
     ],
