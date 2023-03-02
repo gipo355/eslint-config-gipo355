@@ -7,19 +7,20 @@
     "version": "1.0.0",
     "scripts": {},
     "devDependencies": {
-        "eslint-config-airbnb": "19.0.4",
-        "eslint-config-airbnb-typescript": "17.0.0",
         "@typescript-eslint/eslint-plugin": "5.49.0",
         "@typescript-eslint/parser": "5.49.0",
-        "prettier": "2.8.3",
         "eslint": "8.32.0",
+        "eslint-config-airbnb": "19.0.4",
+        "eslint-config-airbnb-typescript": "17.0.0",
         "eslint-config-prettier": "8.6.0",
         "eslint-import-resolver-typescript": "3.5.3",
+        "eslint-plugin-astro": "^0.23.0",
         "eslint-plugin-cypress": "2.12.1",
         "eslint-plugin-import": "2.27.5",
         "eslint-plugin-jest": "27.2.1",
         "eslint-plugin-json": "3.1.0",
         "eslint-plugin-jsonc": "2.6.0",
+        "eslint-plugin-jsx-a11y": "^6.7.1",
         "eslint-plugin-lit": "1.8.2",
         "eslint-plugin-node": "11.1.0",
         "eslint-plugin-prettier": "4.2.1",
@@ -30,12 +31,11 @@
         "eslint-plugin-tailwindcss": "3.8.2",
         "eslint-plugin-tsdoc": "0.2.17",
         "eslint-plugin-unicorn": "45.0.2",
-        "eslint-plugin-jsx-a11y": "^6.7.1",
-        "eslint-plugin-astro": "^0.23.0",
-        "eslint-plugin-jsonc": "2.6.0"
+        "prettier": "2.8.3",
+        "prettier-plugin-astro": "^0.8.0"
     },
     "peerDependencies": {
-        "prettier": "2.8.3",
-        "eslint": "8.32.0"
+        "eslint": "8.32.0",
+        "prettier": "2.8.3"
     }
 }

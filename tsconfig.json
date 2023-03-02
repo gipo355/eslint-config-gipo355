@@ -1,0 +1,72 @@
+{
+    "compilerOptions": {
+        "target": "es2022",
+        // "target": "es6",
+        "lib": ["DOM", "DOM.Iterable", "ScriptHost", "ES2022"],
+        "module": "es2022",
+        // "module": "CommonJS",
+        "jsx": "react-jsx",
+        "moduleResolution": "node",
+        // "resolveJsonModule": true, // will conflict with webpack assets/resource
+        "allowJs": true,
+        // "outDir": "./dist", // will make the dist at the top level
+        "allowSyntheticDefaultImports": true,
+        // "esModuleInterop": true,
+        "forceConsistentCasingInFileNames": true,
+        "strict": true,
+        // "declaration": true,
+        // "declarationMap": true,
+        // "declarationDir": "./types",
+        "noImplicitAny": true,
+        "noImplicitThis": false,
+
+        // faster builds and watch
+        "incremental": true, // allow caching for faster builds
+        // experimental
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+
+        // esbuild integration
+        "esModuleInterop": true,
+        // "isolatedModules": true, // all files must be modules
+
+        "noUnusedParameters": true,
+        "noFallthroughCasesInSwitch": true,
+        "skipLibCheck": true,
+        "sourceMap": true,
+        // "rootDir": ".", // commented, makes the dist start from the root
+        "baseUrl": ".",
+        "plugins": [
+            {
+                "name": "typescript-lit-html-plugin",
+                "format": { "enabled": false }
+            }
+            // { // bugs auto import
+            //     "name": "ts-lit-plugin",
+            //     "strict": true
+            // }
+        ],
+        "paths": {
+            "@courses-pnpm/myapp": ["apps/myapp/src/index.ts"]
+        }
+    },
+    "ts-node": {
+        "compilerOptions": {
+            "module": "CommonJS"
+        },
+        "swc": true
+    },
+    "exclude": [
+        // "**/*.spec.*",
+        "node_modules",
+        "dist",
+        "test-dist",
+        "coverage",
+        // "__tests__",
+        "cypress",
+        "cypress.config.ts",
+        "cypress.config.js",
+        "*cache"
+        // "**/*.config*"
+    ]
+}

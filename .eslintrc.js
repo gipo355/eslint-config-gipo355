@@ -36,8 +36,6 @@ module.exports = {
     plugins: [
         // 'prettier',
         'tailwindcss',
-        'react',
-        'react-hooks',
         // 'jest',
         '@typescript-eslint',
         'import',
@@ -54,10 +52,9 @@ module.exports = {
         'plugin:lit/recommended',
         // "plugin:node/recommended",
 
-        // 'plugin:jsonc/recommended-with-jsonc',
-
         // SIDE EFFECTS AND MUTATIONS
 
+        'plugin:jsonc/recommended-with-jsonc',
         'plugin:prettier/recommended', // activates plugin prettier and extends prettier as last with rule prettier/prettier error
         // 'prettier' // eslint-config-prettier, turns off styling rules, use last
     ],
@@ -83,6 +80,7 @@ module.exports = {
         {
             // here or it conflicts with json plugin
             files: ['*.tsx', '*.jsx'],
+            plugins: ['react', 'react-hooks'],
             extends: ['airbnb/hooks', 'plugin:react/recommended'],
         },
         {
@@ -131,30 +129,30 @@ module.exports = {
         },
         // {
         //     files: ['*.json', '*.json5', '*.jsonc'],
-        //     extends: ['plugin:jsonc/recommended-with-jsonc'],
+        //     // extends: ['plugin:jsonc/recommended-with-jsonc'],
         //     parser: 'jsonc-eslint-parser',
-        //     extraFileExtensions: ['.json', '.jsonc', '.json5'],
+        //     // extraFileExtensions: ['.json', '.jsonc', '.json5'],
         // },
-        // {
-        //     // Define the configuration for `.astro` file.
-        //     files: ['*.astro'],
-        //     extends: [
-        //         // ...
-        //         'plugin:astro/recommended',
-        //     ],
-        //     // Allows Astro components to be parsed.
-        //     parser: 'astro-eslint-parser',
-        //     // Parse the script in `.astro` as TypeScript by adding the following configuration.
-        //     // It's the setting you need when using TypeScript.
-        //     parserOptions: {
-        //         parser: '@typescript-eslint/parser',
-        //         extraFileExtensions: ['.astro'],
-        //     },
-        //     rules: {
-        //         // override/add rules settings here, such as:
-        //         // "astro/no-set-html-directive": "error"
-        //     },
-        // },
+        {
+            // Define the configuration for `.astro` file.
+            files: ['*.astro'],
+            extends: [
+                // ...
+                'plugin:astro/recommended',
+            ],
+            // Allows Astro components to be parsed.
+            parser: 'astro-eslint-parser',
+            // Parse the script in `.astro` as TypeScript by adding the following configuration.
+            // It's the setting you need when using TypeScript.
+            parserOptions: {
+                parser: '@typescript-eslint/parser',
+                extraFileExtensions: ['.astro'],
+            },
+            rules: {
+                // override/add rules settings here, such as:
+                // "astro/no-set-html-directive": "error"
+            },
+        },
     ],
 
     rules: {
