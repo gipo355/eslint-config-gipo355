@@ -68,3 +68,12 @@ make a root level `tsconfig.json`
 ```
 
 You may need to add `includes:[]` and `excludes:[]` to tsconfigs as the typescript parser requires the files to be included
+
+Note:
+for frontend, tsconfig is not used to build. webpack uses babel.
+
+for backend, if webpack is used ususally esbuild or swc don't use tsconfig.
+
+if using tsx or ts-node, tsconfig won't build.
+
+a modification of the tsconfig is needed if TSC is used to build ( usually for backend and packages to generate types )
