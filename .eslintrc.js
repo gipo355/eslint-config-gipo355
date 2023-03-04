@@ -65,13 +65,13 @@ module.exports = {
     // },
 
     overrides: [
-        {
-            // files: ['__tests__/*.ts', '*.test.*', '*.spec.*'],
-            files: ['*.test.*', '*.spec.*'],
-            plugins: ['jest'],
-            extends: ['plugin:jest/recommended'],
-            rules: { 'jest/prefer-expect-assertions': 'off' },
-        },
+        // { // TODO: doesn't work
+        //     // files: ['__tests__/*.ts', '*.test.*', '*.spec.*'],
+        //     files: ['*.test.*', '*.spec.*'],
+        //     plugins: ['jest'],
+        //     extends: ['plugin:jest/recommended'],
+        //     rules: { 'jest/prefer-expect-assertions': 'off' },
+        // },
         // {
         //     files: ['.json', '.jsonc'],
         //     extends: ['plugin:json/recommended'],
