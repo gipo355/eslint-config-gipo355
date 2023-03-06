@@ -65,7 +65,7 @@ module.exports = {
     // },
 
     overrides: [
-        // { // TODO: doesn't work
+        // { // TODO: doesn't work: eslint is off
         //     // files: ['__tests__/*.ts', '*.test.*', '*.spec.*'],
         //     files: ['*.test.*', '*.spec.*'],
         //     plugins: ['jest'],
