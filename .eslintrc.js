@@ -41,6 +41,7 @@ module.exports = {
         'import',
         'simple-import-sort',
         // 'eslint-plugin-tsdoc',
+        'spellcheck',
     ],
     extends: [
         'plugin:tailwindcss/recommended',
@@ -311,5 +312,28 @@ module.exports = {
         // side effects and mutations (immutable and pure plugins)
         'no-var': 2,
         'no-void': 'warn',
+
+        'spellcheck/spell-checker': [
+            1,
+            {
+                comments: true,
+                strings: true,
+                identifiers: true,
+                templates: true,
+                lang: 'en_US',
+                skipWords: [
+                    'dict',
+                    'aff',
+                    'hunspellchecker',
+                    'hunspell',
+                    'utils',
+                    'md',
+                    'sha',
+                ],
+                skipIfMatch: ['http://[^s]*', '^[-\\w]+/[-\\w\\.]+$'],
+                skipWordIfMatch: ['^foobar.*$'],
+                minLength: 3,
+            },
+        ],
     },
 };
