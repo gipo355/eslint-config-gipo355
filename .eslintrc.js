@@ -74,7 +74,7 @@ module.exports = {
     browser: true,
     node: true,
     es2022: true,
-    jest: true,
+    // jest: true,
   },
   ignorePatterns: ['node_modules', 'build', 'dist', 'public', '*cache'],
   plugins: [
@@ -142,13 +142,13 @@ module.exports = {
         // project: ['./tsconfig.eslint.json'],
       },
     },
-    {
-      // files: ['__tests__/*.ts', '*.test.*', '*.spec.*'],
-      files: ['*.test.*', '*.spec.*'],
-      plugins: ['jest'],
-      extends: ['plugin:jest/recommended'],
-      rules: { 'jest/prefer-expect-assertions': 'off' },
-    },
+    // {
+    //   // files: ['__tests__/*.ts', '*.test.*', '*.spec.*'],
+    //   files: ['*.test.*', '*.spec.*'],
+    //   plugins: ['jest'],
+    //   extends: ['plugin:jest/recommended'],
+    //   rules: { 'jest/prefer-expect-assertions': 'off' },
+    // },
     // {
     //     files: ['.json', '.jsonc'],
     //     extends: [
